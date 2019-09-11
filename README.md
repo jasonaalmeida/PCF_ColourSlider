@@ -8,3 +8,5 @@ The colour slider uses the following CDS attribute properties to render the cont
 2. The Colour defined against the list value is used as the background colour when the respective value is selected
 
 ![Two Option List Value Configuration](https://github.com/jasonaalmeida/PCF_BooleanSlider/blob/master/BooleanSliderPCF/images/readme_attribute_config.png)
+
+For covienence, the releases folder contains a generated solution file
