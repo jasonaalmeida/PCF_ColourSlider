@@ -121,7 +121,7 @@
     <value>Two option colour slider that users labels and colours defined against the attribute properties</value>
   </data>
   <data name="BooleanSliderPCF_Display_Key" xml:space="preserve">
-    <value>Two option colour slider</value>
+    <value>Colour slider</value>
   </data>
   <data name="Boolean_Slider_Desc_Key" xml:space="preserve">
     <value>Logical name of the field to associate the slider control</value>

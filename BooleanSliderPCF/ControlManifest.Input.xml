@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="FieldPCF" constructor="BooleanSliderPCF" version="0.0.3" display-name-key="BooleanSliderPCF_Display_Key" description-key="BooleanSliderPCF_Desc_Key" control-type="standard" preview-image="images/thumb.png">
+  <control namespace="FieldPCF" constructor="BooleanSliderPCF" version="0.0.4" display-name-key="BooleanSliderPCF_Display_Key" description-key="BooleanSliderPCF_Desc_Key" control-type="standard" preview-image="images/thumb.png">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="BooleanSlider" display-name-key="Boolean_Slider_Name_Key" description-key="Boolean_Slider_Desc_Key" of-type="TwoOptions" usage="bound" required="true" />
     <!-- 
