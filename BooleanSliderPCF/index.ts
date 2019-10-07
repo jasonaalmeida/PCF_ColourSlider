@@ -45,7 +45,7 @@ export class BooleanSliderPCF implements ComponentFramework.StandardControl<IInp
 		this._context = context;
         this._container = document.createElement("div");
         this._container.setAttribute("class", "divpadding");
-		this._value = context.parameters.BooleanSlider.raw as boolean;
+        this._value = context.parameters.BooleanSlider.raw != null ? context.parameters.BooleanSlider.raw as boolean : false;
 		this._notifyOutputChanged = notifyOutputChanged;
         this._refreshData = this.refreshData.bind(this);
 
@@ -69,14 +69,14 @@ export class BooleanSliderPCF implements ComponentFramework.StandardControl<IInp
         //True Value Settings
         var tdTrue: HTMLTableDataCellElement;
         tdTrue = document.createElement("td");
-        tdTrue.innerHTML = boolOptions[1]["Label"] != "" ? boolOptions[1]["Label"] :"Hello";
+        tdTrue.innerHTML = boolOptions[1]["Label"] != "" ? boolOptions[1]["Label"] :"Yes";
         //use d365 true colour
         this.changeCSS("input:checked + .slider", "background-color", boolOptions[1]["Color"] != "" ? boolOptions[1]["Color"] : "#2196F3");
 
         //False Value Settings
         var tdFalse: HTMLTableDataCellElement;
         tdFalse = document.createElement("td");
-        tdFalse.innerHTML = boolOptions[0]["Label"] !="" ? boolOptions[0]["Label"]:"Goodbye";
+        tdFalse.innerHTML = boolOptions[0]["Label"] !="" ? boolOptions[0]["Label"]:"No";
         //use d365 false colour
         this.changeCSS(".slider", "background-color", boolOptions[0]["Color"] != "" ? boolOptions[0]["Color"] : "#ccc");
 
@@ -143,8 +143,8 @@ export class BooleanSliderPCF implements ComponentFramework.StandardControl<IInp
 	public updateView(context: ComponentFramework.Context<IInputs>): void
 	{
 		this._value = context.parameters.BooleanSlider.raw as boolean;
-		this._context = context;
-        this._slider.checked = this._value as boolean;
+        this._context = context;
+        this._slider.checked = this._value != null ? this._value : false;
 	}
 
 

@@ -1,0 +1,2 @@
+C:\ProjectsAndCode\Internal\PCF\Controls\PCF_BooleanSlider\obj\Debug\PCF_BooleanSlider.pcfprojAssemblyReference.cache
+C:\ProjectsAndCode\Internal\PCF\Controls\PCF_BooleanSlider\obj\Debug\PCF_BooleanSlider.pcfproj.CoreCompileInputs.cache
